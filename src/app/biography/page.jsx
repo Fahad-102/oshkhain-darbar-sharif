@@ -4,14 +4,14 @@ const BiographyPage = () => {
     return (
         <div className="bg-gray-50 min-h-screen py-10 px-4 md:px-20">
             {/* Header Section */}
-            <header className="max-w-4xl mx-auto text-center mb-12">
+            <header className="max-w-8xl mx-auto text-center mb-12">
                 <h1 className="text-3xl md:text-6xl font-bold text-green-900 mb-4">
                     হযরত আল্লামা শাহ্ সূফী আলী রজা (প্রকাশ কানু শাহ্) (রহ:)
                 </h1>
                 <p className="text-xl text-gray-600 italic">ওষখাইন আলী নগর দরবার শরীফ</p>
             </header>
 
-            <main className="max-w-4xl mx-auto bg-white p-8 md:p-12 shadow-lg rounded-lg border-t-8 border-green-700">
+            <main className="max-w-7xl mx-auto bg-white p-8 md:p-12 shadow-lg rounded-lg border-t-8 border-green-700">
                 
                 {/* Intro Section */}
                 <section className="mb-8">

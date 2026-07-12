@@ -8,7 +8,7 @@ const Footer = () => {
                 
                 {/* প্রথম কলাম: লোগো ও বর্ণনা */}
                 <div className="col-span-1 md:col-span-1">
-                    <img src="/logo.png" alt="Logo" className="h-20 mb-4" />
+                    <img src="/majar.jpg"  alt="Logo" className="h-20 mb-4 rounded-full" />
                     <p className="text-sm leading-relaxed mb-6">
                        ওষখাইন আলী নগর দরবার শরীফ একটি সুপরিচিত সুফিবাদভিত্তিক ধর্মীয় প্রতিষ্ঠান।
                     </p>
@@ -45,7 +45,7 @@ const Footer = () => {
                     <h3 className="text-white font-bold mb-4 border-b-2 border-red-600 inline-block">যোগাযোগ</h3>
                     <div className="space-y-3 text-sm mt-2">
                         <p className="flex items-start gap-2"><FaMapMarkerAlt className="text-green-500 mt-1" /> ওষখাইন আলী নগর দরবার শরীফ, আনোয়ারা , চট্টগ্রাম</p>
-                        <p className="flex items-center gap-2"><FaEnvelope className="text-green-500" /> info@dewanbaghsharif.org</p>
+                        <p className="flex items-center gap-2"><FaEnvelope className="text-green-500" /> info@oshkian_darbar_sharif.org</p>
                         <p className="flex items-center gap-2"><FaPhoneAlt className="text-green-500" /> +88-01819349943</p>
                         <p className="flex items-center gap-2"><FaPhoneAlt className="text-green-500" /> +88-01822867388</p>
                     </div>
