@@ -1,69 +1,91 @@
 "use client";
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
-// টেক্সটের পাশের মিটমিট করা স্টার কম্পোনেন্ট
-const TwinklingStar = () => (
+// Star কম্পোনেন্ট এখন আর Math.random ব্যবহার করবে না
+const Star = ({ style, duration, delay }) => (
+    <motion.div
+        className="absolute w-1 h-1 bg-yellow-100 rounded-full"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ duration, repeat: Infinity, delay }}
+        style={style}
+    />
+);
+
+const SmallStar = () => (
     <motion.span
-        initial={{ opacity: 0.2 }}
-        animate={{ opacity: [0.2, 1, 0.2] }}
-        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        className="inline-block text-yellow-400 mx-1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+        className="text-yellow-400 inline-block"
     >
-        ✦
+        ◆
     </motion.span>
 );
 
 const Navbar = () => {
-    // রোলস রয়েস ব্যাকগ্রাউন্ড প্যাটার্ন
-    const starSvg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='%23FFF'%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3Ccircle cx='50' cy='30' r='0.8'/%3E%3Ccircle cx='90' cy='100' r='1.2'/%3E%3Ccircle cx='150' cy='50' r='0.5'/%3E%3Ccircle cx='180' cy='180' r='1'/%3E%3Ccircle cx='30' cy='150' r='0.7'/%3E%3Ccircle cx='120' cy='10' r='0.6'/%3E%3Ccircle cx='100' cy='190' r='1'/%3E%3C/g%3E%3C/svg%3E`;
+    // useMemo ব্যবহার করে র‍্যান্ডম ভ্যালুগুলো একবারই জেনারেট করা হবে
+    const stars = useMemo(() => 
+        Array.from({ length: 40 }).map(() => ({
+            top: `${Math.random() * 100}%`,
+            left: `${Math.random() * 100}%`,
+            duration: Math.random() * 2 + 1,
+            delay: Math.random() * 2,
+        })), []);
 
     return (
-        <nav className="relative flex flex-col md:flex-row justify-between items-center bg-green-900 p-6 border-b-4 border-yellow-600 gap-4 text-center md:text-left overflow-hidden shadow-2xl">
+        <nav className="relative w-full bg-[#066432] p-2 overflow-hidden flex flex-col md:flex-row justify-between items-center shadow-lg min-h-35">
             
-            {/* ব্যাকগ্রাউন্ডে হাজার হাজার তারার এফেক্ট */}
-            <motion.div
-                className="absolute inset-0 z-0"
-                style={{
-                    backgroundImage: `url("${starSvg}")`,
-                    backgroundSize: '200px 200px',
-                    opacity: 0.4
-                }}
-                animate={{
-                    opacity: [0.2, 0.6, 0.2],
-                }}
-                transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                }}
-            />
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                {stars.map((s, i) => (
+                    <Star 
+                        key={i} 
+                        style={{ top: s.top, left: s.left }} 
+                        duration={s.duration} 
+                        delay={s.delay} 
+                    />
+                ))}
+            </div>
+            
+            <div className="absolute inset-0 z-1 pointer-events-none overflow-hidden">
+                <svg className="absolute bottom-0 left-0 w-[70%] h-75" viewBox="0 0 500 500" preserveAspectRatio="none">
+                    <circle cx="500" cy="500" r="320" stroke="#ffffff" strokeWidth="6" fill="none" />
+                    <circle cx="500" cy="500" r="340" stroke="#ef4444" strokeWidth="6" fill="none" />
+                    <circle cx="500" cy="500" r="360" stroke="#facc15" strokeWidth="6" fill="none" />
+                    <circle cx="500" cy="500" r="380" stroke="#3b82f6" strokeWidth="6" fill="none" />
+                </svg>
 
-            {/* বাম দিকের কন্টেন্ট + পাশের স্টার */}
-            <div className="text-white hidden md:block md:text-xs z-10 font-medium leading-relaxed">
-                <TwinklingStar /> নারায়ে তাকবীর <br/>
-                <TwinklingStar /> নারায়ে রিসালত <br/>
-                <TwinklingStar /> নারায়ে গাউসিয়া <br/>
-                <TwinklingStar /> নারায়ে হিন্দওয়ালি <br/>
-                <TwinklingStar /> সম্রাটে বেলায়ত
+                <svg className="absolute bottom-0 right-0 w-[70%] h-75" viewBox="0 0 500 500" preserveAspectRatio="none">
+                    <circle cx="0" cy="500" r="320" stroke="#ffffff" strokeWidth="6" fill="none" />
+                    <circle cx="0" cy="500" r="340" stroke="#ef4444" strokeWidth="6" fill="none" />
+                    <circle cx="0" cy="500" r="360" stroke="#facc15" strokeWidth="6" fill="none" />
+                    <circle cx="0" cy="500" r="380" stroke="#3b82f6" strokeWidth="6" fill="none" />
+                </svg>
             </div>
 
-            {/* মাঝের কন্টেন্ট */}
-            <div className="z-10">
-                <h4 className='text-white md:text-2xl flex justify-center mb-2 drop-shadow-lg'>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h4>
-                <h2 className="text-xl md:text-3xl lg:text-5xl font-bold text-white leading-tight drop-shadow-xl">
-                    ওষখাইন <span className="text-red-500">আলী নগর দরবার</span> শরিফ
+            <div className="z-10 p-4 rounded-md text-white text-xs md:text-sm font-medium">
+                {['নারায়ে তাকবীর', 'নারায়ে রিসালত', 'নারায়ে গাউসিয়া', 'নারায়ে হিন্দওয়ালি', 'সম্রাটে বেলায়ত'].map((text, i) => (
+                    <div key={i} className="flex items-center gap-2 mb-1">
+                        <SmallStar /> {text}
+                    </div>
+                ))}
+            </div>
+
+            <div className="z-10 ml-20 text-center mx-4 mt-10">
+                <h4 className='text-white text-lg md:text-2xl mb-9 font-semibold'>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h4>
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white tracking-wide">
+                    ওষখাইন <span className="text-yellow-300">আলী নগর দরবার </span>শরিফ
                 </h2>
             </div>
 
-            {/* ডান দিকের কন্টেন্ট + পাশের স্টার */}
-            <div className="text-white hidden md:block md:text-xs z-10 font-medium text-right leading-relaxed">
-                আল্লাহু আকবর <TwinklingStar /> <br/>
-                ইয়া রাসুলাল্লাহ (দ.) <TwinklingStar /> <br/>
-                ইয়া গাউসুল আজম দস্তগীর (র.) <TwinklingStar /> <br/>
-                ইয়া খাজা আজমীর <TwinklingStar /> <br/>
-                ইয়া আলী রজা (র.) <TwinklingStar />
+            <div className="z-10 p-4 rounded-md text-white text-xs md:text-sm font-medium text-right ">
+                {['আল্লাহু আকবর', 'ইয়া রাসুলাল্লাহ (দ.)', 'ইয়া গাউসুল আজম দস্তগীর (র.)', 'ইয়া খাজা আজমীর', 'ইয়া আলী রজা (র.)'].map((text, i) => (
+                    <div key={i} className="flex items-center justify-end gap-2 mb-1">
+                        {text} <SmallStar />
+                    </div>
+                ))}
             </div>
         </nav>
     );
