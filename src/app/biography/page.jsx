@@ -11,13 +11,22 @@ const BiographyPage = () => {
                     fill
                     className="object-cover opacity-20"
                     priority
+                    suppressHydrationWarning
                 />
             </div>
 
             {/* Header Section */}
-            <header className="relative z-10 max-w-7xl mx-auto text-center mb-12">
-                <h1 className="text-3xl md:text-5xl font-bold text-green-900 mb-4">
-                    হযরত আল্লামা শাহ্ সূফী আলী রজা (প্রকাশ কানু শাহ্) (রহ:)
+            <header className=" flex flex-col justify-center items-center relative z-10 max-w-7xl mx-auto text-center mb-12">
+                <Image
+                src={"/AliRoza.jpg"}
+                alt='majar'
+                width={600}
+                height={200}
+                suppressHydrationWarning
+                className=' mb-5 rounded-2xl border-2 border-green-500'
+                />
+                <h1 className="text-xl lg:text-4xl md:text-2xl lg:leading-15 font-bold text-green-900 mb-4">
+                   বেলায়াতের সম্রাট পাঁচ তরিকার পীর শ্রেষ্ঠ সাধক মহাকবি কুতুবে মাখতুব শাহীন শাহ <br/> হযরত আল্লামা শাহ্ সূফী আলী রজা (প্রকাশ কানু শাহ্) (রহ:)
                 </h1>
                 <p className="text-xl text-gray-600 italic">ওষখাইন আলী নগর দরবার শরীফ</p>
             </header>

@@ -1,63 +1,65 @@
+import Image from 'next/image';
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFax } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-green-900 text-white py-12 px-6 md:px-20">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer className="bg-green-900 text-white px-6 md:px-20 pb-2">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20">
                 
-                {/* প্রথম কলাম: লোগো ও বর্ণনা */}
-                <div className="col-span-1 md:col-span-1">
-                    <img src="/majar.jpg"  alt="Logo" className="h-20 mb-4 rounded-full" />
-                    <p className="text-sm leading-relaxed mb-6">
-                       ওষখাইন আলী নগর দরবার শরীফ একটি সুপরিচিত সুফিবাদভিত্তিক ধর্মীয় প্রতিষ্ঠান।
+                {/* প্রথম কলাম */}
+                <div className="space-y-2  text-center flex flex-col items-center">
+                    <Image src="/Logo.png" width={150} height={60} alt="Logo" className="brightness-200" suppressHydrationWarning />
+                    <p className="text-sm leading-relaxed">
+                        ওষখাইন আলী নগর দরবার শরীফ একটি সুপরিচিত সুফিবাদভিত্তিক আধ্যাত্মিক
+                         ধর্মীয় প্রতিষ্ঠান।
                     </p>
                     <div className="flex gap-3">
                         {[FaFacebookF, FaTwitter, FaInstagram, FaYoutube].map((Icon, i) => (
-                            <div key={i} className="bg-red-800 p-2 rounded-full cursor-pointer hover:bg-green-700">
+                            <a key={i} href="#" className="bg-red-800 p-2.5 rounded-full hover:bg-green-700 transition-all duration-300">
                                 <Icon className="text-white" />
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
 
-                {/* দ্বিতীয় ও তৃতীয় কলাম: লিঙ্কসমূহ */}
+                {/* লিঙ্ক কলাম ১ */}
                 <div>
-                    <h3 className="text-white font-bold mb-4 border-b-2 border-red-600 inline-block">গুরুত্বপূর্ণ লিঙ্কসমূহ</h3>
-                    <ul className="space-y-2 text-sm mt-2">
+                    <h3 className="font-bold mb-5 border-b-2 pt-15 border-green-600 inline-block">গুরুত্বপূর্ণ লিঙ্কসমূহ</h3>
+                    <ul className="space-y-2 text-sm">
                         {['আমাদের সম্পর্কে', 'দরবারসমূহ', 'খানকা', 'আমাদের দর্শন', 'যোগাযোগ করুন'].map(item => (
-                            <li key={item} className="hover:text-red-500 cursor-pointer">{item}</li>
+                            <li key={item} className="hover:text-red-400 transition cursor-pointer">{item}</li>
                         ))}
                     </ul>
                 </div>
 
+                {/* লিঙ্ক কলাম ২ */}
                 <div>
-                    <h3 className="text-white font-bold mb-4 border-b-2 border-red-600 inline-block">গুরুত্বপূর্ণ লিঙ্কসমূহ</h3>
-                    <ul className="space-y-2 text-sm mt-2">
-                        {['গোপনীয়তা নীতি', 'নিয়ম ও শর্তাবলী', 'অস্বীকৃতি', 'সাহায্য', 'সাধারণ প্রশ্নাবলী'].map(item => (
-                            <li key={item} className="hover:text-red-500 cursor-pointer">{item}</li>
+                    <h3 className="font-bold mb-4 border-b-2 pt-15 border-green-600 inline-block">অন্যান্য তথ্য</h3>
+                    <ul className="space-y-2 text-sm">
+                        {['গোপনীয়তা নীতি', 'নিয়ম ও শর্তাবলী', 'সাহায্য', 'প্রশ্নাবলী'].map(item => (
+                            <li key={item} className="hover:text-red-400 transition cursor-pointer">{item}</li>
                         ))}
                     </ul>
                 </div>
 
                 {/* চতুর্থ কলাম: যোগাযোগ */}
                 <div>
-                    <h3 className="text-white font-bold mb-4 border-b-2 border-red-600 inline-block">যোগাযোগ</h3>
-                    <div className="space-y-3 text-sm mt-2">
-                        <p className="flex items-start gap-2"><FaMapMarkerAlt className="text-green-500 mt-1" /> ওষখাইন আলী নগর দরবার শরীফ, আনোয়ারা , চট্টগ্রাম</p>
-                        <p className="flex items-center gap-2"><FaEnvelope className="text-green-500" /> info@oshkian_darbar_sharif.org</p>
-                        <p className="flex items-center gap-2"><FaPhoneAlt className="text-green-500" /> +88-01819349943</p>
-                        <p className="flex items-center gap-2"><FaPhoneAlt className="text-green-500" /> +88-01822867388</p>
+                    <h3 className="font-bold mb-4 border-b-2 pt-15 border-green-600 inline-block">যোগাযোগ</h3>
+                    <div className="space-y-3 text-sm">
+                        <p className="flex items-start gap-2"><FaMapMarkerAlt className="text-green-400 mt-1" /> ওষখাইন আলী নগর দরবার শরীফ, আনোয়ারা, চট্টগ্রাম</p>
+                        <p className="flex items-center gap-2"><FaEnvelope className="text-green-400" /> info@oshkian.org</p>
+                        <p className="flex items-center gap-2"><FaPhoneAlt className="text-green-400" /> +88-01819349943</p>
+                        <p className="flex items-center gap-2"><FaPhoneAlt className="text-green-400" /> +88-01822867388</p>
                     </div>
                 </div>
             </div>
 
             {/* নিচের কপিরাইট অংশ */}
-            <div className="border-t border-white mt-12 pt-6 flex flex-col md:flex-row justify-between text-xs text-white px-6 md:px-20">
-                <p>এই ওয়েবসাইটে প্রদর্শিত সমস্ত বিষয়বস্তু, যার মধ্যে টেক্সট, ছবি, অডিও এবং অন্যান্য উপকরণ অন্তর্ভুক্ত।</p>
-                <p>কপিরাইট © ওষখাইন আলী নগর দরবার শরীফ ২০২৬ | সমস্ত অধিকার সংরক্ষিত।</p>
-                <p>মোহাম্মাদ ফাহাদ বিন জামাল</p>
-
+            <div className="border-t border-green-300 mt-12 pt-5 flex flex-col md:flex-row justify-between items-center text-sm text-green-200 gap-4 text-center">
+                <p>© ২০২৬ ওষখাইন আলী নগর দরবার শরীফ , সমস্ত অধিকার সংরক্ষিত।</p>
+                <p></p>
+                <p>ডিজাইন ও ডেভেলপমেন্ট: মোহাম্মাদ ফাহাদ বিন জামাল</p>
             </div>
         </footer>
     );
