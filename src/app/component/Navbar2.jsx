@@ -34,8 +34,8 @@ const Navbar2 = () => {
           <Button className={buttonClass}><IoMdArrowDropdown /> জীবনী</Button>
           <Dropdown.Popover>
             <Dropdown.Menu>
-              <Dropdown.Item key="bio1"><Link href={'/biography'}>হযরত শাহ্ সূফী আলী রজা প্রকাশ কানু শাহ্ (রহ:)</Link></Dropdown.Item>
-              <Dropdown.Item key="bio2">হযরত শাহ্ সূফী রশিদ আহমদ মিয়া (রহ:)</Dropdown.Item>
+              <Dropdown.Item key="bio1"><Link href={'/aliRozaBiography'}>হযরত শাহ্ সূফী আলী রজা প্রকাশ কানু শাহ্ (রহ:)</Link></Dropdown.Item>
+              <Dropdown.Item key="bio2"><Link href={'/rashidAhmedBiography'}>হযরত শাহ্ সূফী রশিদ আহমদ মিয়া (রহ:)</Link></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown.Popover>
         </Dropdown>

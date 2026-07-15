@@ -9,7 +9,7 @@ const Footer = () => {
                 
                 {/* প্রথম কলাম */}
                 <div className="space-y-2  text-center flex flex-col items-center">
-                    <Image src="/Logo.png" width={150} height={60} alt="Logo" className="brightness-200" suppressHydrationWarning />
+                    <Image src="/Logo.png" width={150} height={60} alt="Logo" className="brightness-200 w-20 lg:w-30" suppressHydrationWarning />
                     <p className="text-sm leading-relaxed">
                         ওষখাইন আলী নগর দরবার শরীফ একটি সুপরিচিত সুফিবাদভিত্তিক আধ্যাত্মিক
                          ধর্মীয় প্রতিষ্ঠান।
@@ -25,7 +25,7 @@ const Footer = () => {
 
                 {/* লিঙ্ক কলাম ১ */}
                 <div>
-                    <h3 className="font-bold mb-5 border-b-2 pt-15 border-green-600 inline-block">গুরুত্বপূর্ণ লিঙ্কসমূহ</h3>
+                    <h3 className="font-bold mb-5 border-b-2 lg:pt-15 border-green-600 inline-block">গুরুত্বপূর্ণ লিঙ্কসমূহ</h3>
                     <ul className="space-y-2 text-sm">
                         {['আমাদের সম্পর্কে', 'দরবারসমূহ', 'খানকা', 'আমাদের দর্শন', 'যোগাযোগ করুন'].map(item => (
                             <li key={item} className="hover:text-red-400 transition cursor-pointer">{item}</li>
@@ -35,7 +35,7 @@ const Footer = () => {
 
                 {/* লিঙ্ক কলাম ২ */}
                 <div>
-                    <h3 className="font-bold mb-4 border-b-2 pt-15 border-green-600 inline-block">অন্যান্য তথ্য</h3>
+                    <h3 className="font-bold mb-4 border-b-2  lg:pt-15 border-green-600 inline-block">অন্যান্য তথ্য</h3>
                     <ul className="space-y-2 text-sm">
                         {['গোপনীয়তা নীতি', 'নিয়ম ও শর্তাবলী', 'সাহায্য', 'প্রশ্নাবলী'].map(item => (
                             <li key={item} className="hover:text-red-400 transition cursor-pointer">{item}</li>
@@ -45,7 +45,7 @@ const Footer = () => {
 
                 {/* চতুর্থ কলাম: যোগাযোগ */}
                 <div>
-                    <h3 className="font-bold mb-4 border-b-2 pt-15 border-green-600 inline-block">যোগাযোগ</h3>
+                    <h3 className="font-bold mb-4 border-b-2  lg:pt-15 border-green-600 inline-block">যোগাযোগ</h3>
                     <div className="space-y-3 text-sm">
                         <p className="flex items-start gap-2"><FaMapMarkerAlt className="text-green-400 mt-1" /> ওষখাইন আলী নগর দরবার শরীফ, আনোয়ারা, চট্টগ্রাম</p>
                         <p className="flex items-center gap-2"><FaEnvelope className="text-green-400" /> info@oshkian.org</p>
