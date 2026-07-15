@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
 
             {/* মাঝের কন্টেন্ট - লোগো এবং টেক্সট সেন্টারে */}
-            <div className="z-10 text-center flex flex-col items-center flex-2 px-2">
+            <div className="z-10 text-center flex flex-col items-center mt-5 flex-2 px-2">
                 <h4 className='text-white text-[10px] md:text-sm lg:text-lg font-semibold  whitespace-nowrap'>
                     بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
                 </h4>

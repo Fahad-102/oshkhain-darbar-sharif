@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const Banner = () => {
-    const images = ["/majar.jpg", "/majar.jpg", "/majar.jpg"];
+    const images = ["/majar.jpg", "/majar1.jpg", "/majar.jpg"];
 
     return (
         <div className="w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
