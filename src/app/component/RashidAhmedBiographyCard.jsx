@@ -73,7 +73,7 @@ const RashidAhmedBiographyCard = () => {
             {/* মূল বায়োগ্রাফি পেজে যাওয়ার লিঙ্ক বাটন */}
             <div className="pt-4">
               <Link 
-                href="/RashidAhmedMiahBiography"
+                href="/rashidAhmedBiography"
                 className="inline-flex items-center justify-center bg-green-700 hover:bg-green-800 text-white font-semibold py-3.5 px-8 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 বিস্তারিত জীবনী পড়ুন
