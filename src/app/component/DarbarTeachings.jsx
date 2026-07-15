@@ -98,7 +98,7 @@ const DarbarTeachings = () => {
   };
 
   return (
-    <section className="py-16 px-6 bg-white font-tiro text-center overflow-hidden">
+    <section className="py-16 mt-20 px-6 bg-white font-tiro text-center overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* হেডার অ্যানিমেশন */}
