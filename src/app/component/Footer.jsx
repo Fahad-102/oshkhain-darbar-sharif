@@ -9,7 +9,7 @@ const Footer = () => {
                 
                 {/* প্রথম কলাম */}
                 <div className="space-y-2  text-center flex flex-col items-center">
-                    <Image src="/Logo.png" width={150} height={60} alt="Logo" className="brightness-200 w-20 lg:w-30" suppressHydrationWarning />
+                    <Image src="/Logo.png" width={150} height={60} alt="Logo" className="w-20 lg:w-30" suppressHydrationWarning />
                     <p className="text-sm leading-relaxed">
                         ওষখাইন আলী নগর দরবার শরীফ একটি সুপরিচিত সুফিবাদভিত্তিক আধ্যাত্মিক
                          ধর্মীয় প্রতিষ্ঠান।
