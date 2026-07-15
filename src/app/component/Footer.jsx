@@ -68,7 +68,7 @@ const Footer = () => {
                 {/* নিচের কপিরাইট অংশ */}
                 <div className="border-t border-green-800/60 mt-12 pt-5 flex flex-col md:flex-row justify-between items-center text-sm text-green-200/80 gap-4 text-center">
                     <p>© ২০২৬ ওষখাইন আলী নগর দরবার শরীফ , সমস্ত অধিকার সংরক্ষিত।</p>
-                    <p>ডিজাইন ও ডেভেলপমেন্ট: মোহাম্মাদ ফাহাদ বিন জামাল</p>
+                    <p>ডিজাইন ও ডেভেলপমেন্ট: ইঞ্জিনিয়ার মোহাম্মাদ ফাহাদ বিন জামাল</p>
                 </div>
             </div>
         </footer>
