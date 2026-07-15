@@ -36,7 +36,7 @@ const BiographyCard = () => {
           {/* ডান পাশে সংক্ষিপ্ত পরিচিতি ও বাটন */}
           <div className="w-full lg:w-1/2 p-8 md:p-12 space-y-6">
             <span className="text-green-700 text-sm font-semibold tracking-wider uppercase block">
-              ক্ষণজন্মা মহাপুরুষের জীবন চরিত
+               বেলায়াতের সম্রাট পাঁচ তরিকার পীর শ্রেষ্ঠ সাধক মহাকবি ক্ষণজন্মা মহাপুরুষের জীবনী
             </span>
 
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-950 leading-tight">
