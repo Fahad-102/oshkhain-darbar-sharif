@@ -9,6 +9,7 @@ import RashidAhmedBiographyCard from "./component/RashidAhmedBiographyCard";
 import Murshid from "./component/Murshid";
 import BoroShahjada from "./component/BoroShahjada";
 import ChotoShahjada from "./component/ChotoShahjada";
+import DarbarMap from "./component/DarbarMap";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <Murshid/>
         <BoroShahjada/>
         <ChotoShahjada/>
+        <DarbarMap/>
       </div>
     </div>
   );

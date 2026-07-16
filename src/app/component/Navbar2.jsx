@@ -90,12 +90,9 @@ const Navbar2 = () => {
 
         {/* যোগাযোগ ড্রপডাউন */}
         <Dropdown>
+          <Link href={'/darbarMap'}>
           <Button className={buttonClass}>যোগাযোগ</Button>
-          <Dropdown.Popover>
-            <Dropdown.Menu>
-              <Dropdown.Item key="c1">যোগাযোগ করুন</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown.Popover>
+          </Link>
         </Dropdown>
 
       </div>
