@@ -94,10 +94,10 @@ const DarbarTeachings = () => {
      
     >
       {/* লাইট অপাসিটি ওভারলে (ছবির মতন সফট ফিল দেওয়ার জন্য) */}
-      <div className="absolute inset-0 bg-white rounded-2xl border-2 pointer-events-none" />
+      <div className="absolute shadow-xl inset-3 bg-white rounded-[2rem]   border border-green-300 pointer-events-none" />
 
       {/* ছবির মতো চারিদিকের বর্ডার ফ্রেম */}
-      <div className="absolute inset-4 border border-amber-800/10 rounded-[2rem] pointer-events-none z-20" />
+      <div className="absolute  rounded-[2rem] pointer-events-none z-20" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         

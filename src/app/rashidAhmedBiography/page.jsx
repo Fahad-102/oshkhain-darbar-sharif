@@ -27,8 +27,8 @@ const RashidAhmedMiahBiography = () => {
                     className="mb-5 rounded-2xl border-2 border-green-500 shadow-lg object-cover"
                 />
                 <h1 className="text-xl lg:text-4xl md:text-2xl lg:leading-15 font-bold text-green-900 mb-4">
-                    সাত পিস্তানী ফকির, বেলায়েতের উজ্জ্বল নক্ষত্র ও আধ্যাত্মিক সাধক <br/>
-                    হযরত শাহ্ রশিদ আহমদ কেবলা (রঃ)
+                    বেলায়েতের উজ্জ্বল নক্ষত্র ও আধ্যাত্মিক সাধক <br/>
+                    তাজুল আসফিয়া হযরত শাহ্ রশিদ আহমদ কেবলা (রঃ)
                 </h1>
                 <p className="text-xl text-gray-600 italic">ওষখাইন আলী নগর দরবার শরীফ</p>
             </header>

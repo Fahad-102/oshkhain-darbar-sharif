@@ -14,7 +14,7 @@ const RashidAhmedBiographyCard = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-6xl mx-auto bg-white rounded-3xl overflow-hidden shadow-xl border border-green-100 transition-all duration-300 hover:shadow-2xl"
+        className="max-w-6xl mx-auto bg-white rounded-3xl overflow-hidden shadow-xl border border-green-300 transition-all duration-300 hover:shadow-2xl"
       >
         <div className="flex flex-col lg:flex-row-reverse">
           
@@ -40,9 +40,9 @@ const RashidAhmedBiographyCard = () => {
             </span>
 
             <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold text-green-950 leading-tight">
-              হযরত শাহ্ রশিদ আহমদ কেবলা 
+              হযরত শাহ্ রশিদ আহমদ কেবলা   
               <span className="text-xl md:text-3xl font-semibold text-red-800">
-                (রঃ)
+                 (রঃ)
               </span>
             </h2>
 

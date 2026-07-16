@@ -14,7 +14,7 @@ const BiographyCard = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-6xl mx-auto bg-white rounded-3xl overflow-hidden shadow-xl border border-green-100 transition-all duration-300 hover:shadow-2xl"
+        className="max-w-6xl mx-auto bg-white rounded-3xl overflow-hidden  shadow-xl border border-green-300 transition-all duration-300 hover:shadow-2xl"
       >
         <div className="flex flex-col lg:flex-row items-center">
           
@@ -42,7 +42,7 @@ const BiographyCard = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-950 leading-tight">
               হযরত আল্লামা শাহ্ সূফী আলী রজা <br />
               <span className="text-xl md:text-2xl font-semibold text-red-800">
-                (প্রকাশ কানু শাহ্) (রহ:)
+                প্রকাশ কানু শাহ্ (রহ:)
               </span>
             </h2>
 
