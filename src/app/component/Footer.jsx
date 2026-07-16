@@ -52,8 +52,8 @@ const Footer = () => {
 
     const socialLinks = {
         facebook: "https://www.facebook.com/share/1Gue1cuqCK/?mibextid=wwXIfr",
-        twitter: "https://twitter.com/yourprofile",
-        instagram: "https://instagram.com/yourprofile",
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
         youtube: "https://youtube.com/channel/UC2OchXXpMNoV-HAr3sQnrzA?si=I0_x21B0DnYfYMxI",
     };
 
