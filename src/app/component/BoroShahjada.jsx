@@ -39,15 +39,15 @@ const Shahjada = () => {
   };
 
   return (
-    // overflow-x-hidden নিশ্চিত করে যাতে ডান দিক থেকে আসার সময় স্ক্রিন কেঁপে বা ভেঙে না যায়
+    // overflow-x-hidden নিশ্চিত করে যাতে ডান দিক থেকে আসার সময় স্ক্রিন কেঁপে বা ভেঙে না যায়
     <div className="w-full max-w-6xl mx-auto p-4 md:p-8 overflow-x-hidden">
-      {/* মেইন ব্যানার কার্ড — আধুনিক সুফি গ্রেডিয়েন্ট ও গোল্ডেন বর্ডার স্টাইল */}
+      {/* মেইন ব্যানার কার্ড — md:flex-row-reverse ব্যবহারের ফলে বড় স্ক্রিনে ছবি ডানে থাকবে */}
       <motion.div 
         variants={cardVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="relative overflow-hidden bg-gradient-to-br from-[#0b3311] via-[#124e1b] to-[#07240c] text-white rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl border border-yellow-600/20 z-10"
+        className="relative overflow-hidden bg-gradient-to-br from-[#0b3311] via-[#124e1b] to-[#07240c] text-white rounded-3xl p-8 md:p-12 flex flex-col md:flex-row-reverse items-center justify-between gap-10 shadow-2xl border border-yellow-600/20 z-10"
       >
         
         {/* সূক্ষ্ম সুফি আর্ট জ্যামিতিক ওয়াটারমার্ক ব্যাকগ্রাউন্ড */}
@@ -59,7 +59,7 @@ const Shahjada = () => {
         <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-yellow-500/30 rounded-bl-lg pointer-events-none"></div>
         <div className="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-yellow-500/30 rounded-br-lg pointer-events-none"></div>
 
-        {/* বাম পাশের ইমেজ কন্টেন্ট (মেহরাব আকৃতির ফ্রেম — গোল্ডেন আউটলাইন ও গ্লো সহ) */}
+        {/* ডান পাশের ইমেজ কন্টেন্ট (মেহরাব আকৃতির ফ্রেম — গোল্ডেন আউটলাইন ও গ্লো সহ) */}
         <motion.div variants={childVariants} className="flex-shrink-0 z-10 relative">
           {/* ছবির পেছনের আধ্যাত্মিক গ্লো ইফেক্ট */}
           <div className="absolute -inset-1 bg-gradient-to-b from-yellow-500/25 to-emerald-500/10 rounded-t-[110px] rounded-b-[45px] blur-lg opacity-75"></div>
@@ -77,7 +77,7 @@ const Shahjada = () => {
           </div>
         </motion.div>
 
-        {/* ডান পাশের টেক্সট কন্টেন্ট */}
+        {/* বাম পাশের টেক্সট কন্টেন্ট */}
         <div className="flex-1 z-10 space-y-6 max-w-2xl text-center md:text-left">
           
           {/* শাহজাদা ট্যাগ এবং নাম */}
