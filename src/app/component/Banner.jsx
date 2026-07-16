@@ -29,9 +29,9 @@ const Banner = () => {
                                 alt="Banner"
                                 fill
                                 priority={index === 0}
-                                // object-cover ইমেজকে না কেটে বা না চ্যাপ্টা করে সুন্দরভাবে ফিট করবে
                                 className="object-cover"
                                 sizes="100vw"
+                                suppressHydrationWarning
                             />
                         </div>
                     </SwiperSlide>

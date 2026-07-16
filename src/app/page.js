@@ -22,6 +22,7 @@ export default function Home() {
           className="object-cover opacity-10" 
           priority
           quality={75}
+          suppressHydrationWarning
         />
       </div>
 
