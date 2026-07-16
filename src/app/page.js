@@ -12,10 +12,10 @@ export default function Home() {
     <div className="relative min-h-screen">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/calligraphy-bg.avif" 
+          src="/calligraphy-bg.webp" 
           alt="Calligraphy Background"
           fill
-          className="object-cover opacity-7" 
+          className="object-cover opacity-10" 
           priority
           quality={75}
         />

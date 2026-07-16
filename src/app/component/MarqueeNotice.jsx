@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const MarqueeNotice = () => {
-  const noticeText = "হযরত শাহ্ আলী রজা কানু শাহ (রহঃ) এর সর্বশ্রেষ্ঠ অবদান ও কারামত জাহেরী নির্দেশিত বিষু মোবারক যা প্রতি বছর পঞ্জিকার তারিখ বর্ষ মতে আষাঢ়ের শেষ ও পৌষের শেষ ৩ দিন ব্যাপী রশিদ মঞ্জিলে পালিত হয়।";
+  const noticeText = "হযরত শাহ্ আলী রজা কানু শাহ (রহঃ) এর সর্বশ্রেষ্ঠ অবদান ও কারামত জাহেরী নির্দেশিত আষাঢ় বিষু মোবারক পঞ্জিকার তারিখ বর্ষ মতে ১৫ , ১৬ , ১৭  জুলাই ২০২৬ ইং ৩ দিন ব্যাপী বড়মিয়া রশিদ মঞ্জিলে পালিত হবে।";
 
   return (
     <div className="bg-emerald-950 text-stone-100 py-3.5 border-y border-amber-600/30 flex items-center overflow-hidden select-none font-tiro relative z-10 shadow-[0_4px_20px_rgba(0,0,0,0.15)]">

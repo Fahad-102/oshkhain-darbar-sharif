@@ -7,10 +7,10 @@ const RashidAhmedMiahBiography = () => {
             {/* Background Calligraphy/Pattern */}
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src="/calligraphy-bg.jpg" 
+                    src="/calligraphy-bg.webp" 
                     alt="Background Calligraphy"
                     fill
-                    className="object-cover opacity-20"
+                    className="object-cover opacity-10"
                     priority
                     suppressHydrationWarning
                 />

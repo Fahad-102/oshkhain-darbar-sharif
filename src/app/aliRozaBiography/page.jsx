@@ -6,10 +6,10 @@ const BiographyPage = () => {
         <div className="relative min-h-screen py-10 px-4 md:px-20 overflow-hidden">
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src="/calligraphy-bg.jpg" 
+                    src="/calligraphy-bg.webp" 
                     alt="Background Calligraphy"
                     fill
-                    className="object-cover opacity-20"
+                    className="object-cover opacity-10"
                     priority
                     suppressHydrationWarning
                 />

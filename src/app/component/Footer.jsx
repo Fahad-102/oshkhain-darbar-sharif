@@ -50,12 +50,11 @@ const Footer = () => {
     const [stars, setStars] = useState([]);
     const [shootingStars, setShootingStars] = useState([]);
 
-    // 🔗 সোশ্যাল মিডিয়া লিংক
     const socialLinks = {
-        facebook: "https://facebook.com/yourpage",
+        facebook: "https://www.facebook.com/share/1Gue1cuqCK/?mibextid=wwXIfr",
         twitter: "https://twitter.com/yourprofile",
         instagram: "https://instagram.com/yourprofile",
-        youtube: "https://youtube.com/yourchannel",
+        youtube: "https://youtube.com/channel/UC2OchXXpMNoV-HAr3sQnrzA?si=I0_x21B0DnYfYMxI",
     };
 
     useEffect(() => {
@@ -139,13 +138,13 @@ const Footer = () => {
                     {/* প্রথম কলাম: লোগো ও বর্ণনা */}
                     <div className="space-y-4 text-center sm:text-left flex flex-col items-center sm:items-start">
                         <div className="relative group flex-shrink-0">
-                            <div className=" lg:ml-15 absolute -inset-1 bg-gradient-to-r from-amber-500 to-yellow-300 rounded-full blur opacity-5 group-hover:opacity-40 transition duration-500"></div>
+                            <div className="lg:ml-15 absolute -inset-1 bg-gradient-to-r from-amber-500 to-yellow-300 rounded-full blur opacity-5 group-hover:opacity-40 transition duration-500"></div>
                             <Image src="/Logo.png" width={80} height={80} alt="Logo" className="lg:ml-15 relative object-contain w-30 h-30" suppressHydrationWarning />
                         </div>
                         <p className="text-sm leading-relaxed text-stone-300">
                             ওষখাইন আলী নগর দরবার শরীফ একটি সুপরিচিত সুফিবাদভিত্তিক আধ্যাত্মিক ধর্মীয় প্রতিষ্ঠান।
                         </p>
-                        <div className=" flex lg:ml-2  gap-5 pt-2">
+                        <div className="flex lg:ml-2 gap-5 pt-2">
                             {[
                                 { Icon: FaFacebookF, url: socialLinks.facebook },
                                 { Icon: FaTwitter, url: socialLinks.twitter },
@@ -157,7 +156,7 @@ const Footer = () => {
                                     href={item.url} 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
-                                    className="bg-amber-500/10 p-2.5 rounded-full border border-amber-500/30 text-amber-400 hover:bg-amber-500 hover:text-green-950 hover:scale-115 transition-all duration-300"
+                                    className="bg-amber-500/10 p-2.5 rounded-full border border-amber-500/30 text-amber-400 hover:bg-amber-500 hover:text-green-950 hover:scale-110 transition-all duration-300"
                                 >
                                     <item.Icon size={16} />
                                 </a>
@@ -165,7 +164,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* লিঙ্ক কলাম ১ (ডুপ্লিকেট নাম ফিক্সড) */}
+                    {/* লিঙ্ক কলাম ১ */}
                     <div className="text-center sm:text-left">
                         <h3 className="font-bold text-amber-400 mb-5 border-b-2 border-amber-500/30 pb-1 inline-block tracking-wide">
                             গুরুত্বপূর্ণ লিঙ্কসমূহ
