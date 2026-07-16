@@ -187,7 +187,7 @@ const Navbar = () => {
                 </div>
 
                 {/* ৩. প্রধান নাম */}
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-wide leading-tight drop-shadow-md font-sans">
+                <h2 className="  text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-wide leading-tight drop-shadow-md font-sans">
                     ওষখাইন <span className="bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent drop-shadow-sm">আলী নগর দরবার</span> শরীফ
                 </h2>
             </div>

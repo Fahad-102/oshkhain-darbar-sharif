@@ -42,7 +42,7 @@ const Navbar2 = () => {
 
         {/* তথ্য ড্রপডাউন */}
         <Dropdown>
-          <Button className={buttonClass}>তথ্য</Button>
+          <Button className={buttonClass}>শাজরা শরীফ</Button>
           <Dropdown.Popover>
             <Dropdown.Menu>
               <Dropdown.Item key="info1">তথ্য ১</Dropdown.Item>
