@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const RashidAhmedBiographyCard = () => {
   return (
-    <section className="py-16 px-6 bg-white font-tiro overflow-hidden">
+    <section className="py-16 px-6  font-tiro overflow-hidden">
       {/* motion.div যুক্ত করা হয়েছে যা ডান থেকে স্লাইড করবে */}
       <motion.div 
         initial={{ opacity: 0, x: 100 }}

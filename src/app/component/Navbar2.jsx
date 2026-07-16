@@ -14,7 +14,7 @@ const Navbar2 = () => {
   return (
     <nav className="border-b-2 border-gray-200 p-4">
       {/* মোবাইল মেনু বাটন */}
-      <div className="md:hidden flex justify-between items-center">
+      <div className="md:hidden  flex justify-between items-center">
         <span className="font-bold text-green-900 text-lg">মেনু</span>
         <Button variant="light" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}

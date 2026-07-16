@@ -90,16 +90,11 @@ const DarbarTeachings = () => {
 
   return (
     <section 
-      className="py-20 mt-20 px-6 font-tiro text-center relative overflow-hidden bg-[#fdfbf7]"
-      style={{ 
-        backgroundImage: "url('/calligraphy-bg.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="py-20 mt-20 px-6  font-tiro text-center relative overflow-hidden "
+     
     >
       {/* লাইট অপাসিটি ওভারলে (ছবির মতন সফট ফিল দেওয়ার জন্য) */}
-      <div className="absolute inset-0 bg-[#fbf8f2]/92 pointer-events-none" />
+      <div className="absolute inset-0 bg-white rounded-2xl border-2 pointer-events-none" />
 
       {/* ছবির মতো চারিদিকের বর্ডার ফ্রেম */}
       <div className="absolute inset-4 border border-amber-800/10 rounded-[2rem] pointer-events-none z-20" />
