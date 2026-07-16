@@ -6,6 +6,9 @@ import BiographyCard from "./component/BiographyCard";
 import DarbarTeachings from "./component/DarbarTeachings";
 import MarqueeNotice from "./component/MarqueeNotice";
 import RashidAhmedBiographyCard from "./component/RashidAhmedBiographyCard";
+import Murshid from "./component/Murshid";
+import BoroShahjada from "./component/BoroShahjada";
+import ChotoShahjada from "./component/ChotoShahjada";
 
 export default function Home() {
   return (
@@ -27,6 +30,9 @@ export default function Home() {
         <DarbarTeachings />
         <BiographyCard />
         <RashidAhmedBiographyCard />
+        <Murshid/>
+        <BoroShahjada/>
+        <ChotoShahjada/>
       </div>
     </div>
   );
